@@ -70,36 +70,7 @@
   <!-- End Header -->
   <!-- ======= Search Bar ======= -->
   <div class="container-fluid search-bar col-lg-12 ">
-    <div class="row height d-flex justify-content-center align-items-center">
-      <div class="col-md-6">
-        <div class="form">
-          <form id="searchForm" onsubmit="return redirectToPlace()">
-            <input type="text" class="form-control form-input" id="searchInput" placeholder="Explore a place...">
-            <span class="left-pan">
-              <button class="button" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i></button>
-            </span>
-            <div class="gcse-search"></div>
-          </form>
-        </div>
-      </div>
-    </div>
   </div>
-  <script>
-    function redirectToPlace() {
-      var place = document.getElementById("searchInput").value;
-
-      if (place.trim() !== "") {
-        window.location.href = "/places/" + encodeURIComponent(place) + ".html";
-      } else {
-        alert("Please enter a place");
-      }
-      return false;
-    }
-  </script>
-  <script async src="https://cse.google.com/cse.js?cx=378b08a387daa4078">
-  </script>
-  <div class="gcse-search"></div>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
